@@ -3,7 +3,7 @@ package main
 import "testing"
 
 func Test_say(t *testing.T) {
-	want := "I'm bot, hello!"
+	want := "I am bot, hello!"
 	got := say("bot", "hello!")
 
 	if want != got {
