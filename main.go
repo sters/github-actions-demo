@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(say("hello!"))
+	fmt.Println(say("bot", "hello!"))
 }
 
-func say(message string) string {
-	return fmt.Sprintf("I'm bot, %s", message)
+func say(user, message string) string {
+	return fmt.Sprintf("I am %s, %s", user, message)
 }
