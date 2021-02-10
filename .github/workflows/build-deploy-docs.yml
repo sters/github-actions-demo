@@ -1,0 +1,15 @@
+name: Build & Deploy docs
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run gitbook action
+      uses: ZanderZhao/gitbook-action@v1.2.4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        source_dir: docs
